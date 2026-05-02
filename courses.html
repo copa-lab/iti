@@ -1,0 +1,238 @@
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<header>
+  <h1>Govt ITI College</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="result.html">Result</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<section class="section">
+<h2>Courses</h2>
+<div class="cards">
+
+  <div class="card" onclick="showInfo('electrician')">
+    <h3>Electrician</h3>
+    <p>Duration: 2 Years</p>
+  </div>
+
+  <div class="card" onclick="showInfo('fitter')">
+    <h3>Fitter</h3>
+    <p>Duration: 2 Years</p>
+  </div>
+
+  <div class="card" onclick="showInfo('copa')">
+    <h3>COPA</h3>
+    <p>Duration: 1 Year</p>
+  </div>
+
+  <div class="card" onclick="showInfo('ictsm')">
+    <h3>ICTSM</h3>
+    <p>Duration: 2 Years</p>
+  </div>
+
+  <div class="card" onclick="showInfo('sewing')">
+    <h3>Sewing Technology</h3>
+    <p>Duration: 1 Year</p>
+  </div>
+
+  <div class="card" onclick="showInfo('diesel')">
+    <h3>Mechanical Diesel</h3>
+    <p>Duration: 1 Year</p>
+  </div>
+
+  <div class="card" onclick="showInfo('welder')">
+    <h3>Welder</h3>
+    <p>Duration: 1 Year</p>
+  </div>
+
+</div>
+
+<!-- Info Show Area -->
+<div id="courseInfo" class="section"></div>
+</section>
+<script>
+function showInfo(course){
+
+let data = {
+
+electrician: `
+<h2>इलेक्ट्रीशियन (Electrician)</h2>
+<p><b>अवधि:</b> 2 वर्ष</p>
+
+<h3>कोर्स परिचय:</h3>
+<p>इस ट्रेड में छात्रों को घरेलू एवं औद्योगिक विद्युत कार्य, वायरिंग, मशीनों की मरम्मत और मेंटेनेंस का प्रशिक्षण दिया जाता है।</p>
+
+<h3>मुख्य विषय:</h3>
+<ul>
+<li>इलेक्ट्रिकल थ्योरी</li>
+<li>हाउस वायरिंग</li>
+<li>मोटर एवं ट्रांसफार्मर</li>
+<li>सुरक्षा नियम (Safety)</li>
+</ul>
+
+<h3>सीखने वाले कौशल:</h3>
+<ul>
+<li>घर और फैक्ट्री की वायरिंग</li>
+<li>इलेक्ट्रिकल फॉल्ट ढूंढना</li>
+<li>मशीन मेंटेनेंस</li>
+</ul>
+
+<h3>नौकरी के अवसर:</h3>
+<ul>
+<li>इलेक्ट्रीशियन</li>
+<li>मेंटेनेंस टेक्नीशियन</li>
+<li>सरकारी नौकरी</li>
+</ul>
+`,
+
+fitter: `
+<h2>फिटर (Fitter)</h2>
+<p><b>अवधि:</b> 2 वर्ष</p>
+
+<h3>कोर्स परिचय:</h3>
+<p>इस ट्रेड में मशीनों के पार्ट्स को फिट करना, मापना और वर्कशॉप में काम करना सिखाया जाता है।</p>
+
+<h3>मुख्य विषय:</h3>
+<ul>
+<li>वर्कशॉप प्रैक्टिस</li>
+<li>मेजरमेंट टूल्स</li>
+<li>मशीन टूल्स</li>
+</ul>
+
+<h3>सीखने वाले कौशल:</h3>
+<ul>
+<li>मशीन पार्ट्स फिटिंग</li>
+<li>ड्रिलिंग और कटिंग</li>
+<li>टूल्स का सही उपयोग</li>
+</ul>
+
+<h3>नौकरी के अवसर:</h3>
+<ul>
+<li>फिटर</li>
+<li>टेक्नीशियन</li>
+<li>फैक्ट्री वर्कर</li>
+</ul>
+`,
+
+copa: `
+<h2>कोपा (COPA)</h2>
+<p><b>अवधि:</b> 1 वर्ष</p>
+
+<h3>कोर्स परिचय:</h3>
+<p>इस ट्रेड में कंप्यूटर बेसिक्स, इंटरनेट, प्रोग्रामिंग और ऑफिस वर्क सिखाया जाता है।</p>
+
+<h3>मुख्य विषय:</h3>
+<ul>
+<li>कंप्यूटर बेसिक्स</li>
+<li>MS Office</li>
+<li>इंटरनेट और ईमेल</li>
+</ul>
+
+<h3>सीखने वाले कौशल:</h3>
+<ul>
+<li>डाटा एंट्री</li>
+<li>ऑफिस वर्क</li>
+<li>बेसिक प्रोग्रामिंग</li>
+</ul>
+
+<h3>नौकरी के अवसर:</h3>
+<ul>
+<li>कंप्यूटर ऑपरेटर</li>
+<li>डाटा एंट्री ऑपरेटर</li>
+<li>ऑफिस असिस्टेंट</li>
+</ul>
+`,
+
+ictsm: `
+<h2>ICTSM</h2>
+<p><b>अवधि:</b> 2 वर्ष</p>
+
+<h3>कोर्स परिचय:</h3>
+<p>इस ट्रेड में कंप्यूटर हार्डवेयर, नेटवर्किंग और सिस्टम रिपेयरिंग सिखाई जाती है।</p>
+
+<h3>मुख्य विषय:</h3>
+<ul>
+<li>कंप्यूटर हार्डवेयर</li>
+<li>नेटवर्किंग</li>
+<li>सिस्टम रिपेयर</li>
+</ul>
+
+<h3>नौकरी:</h3>
+<ul>
+<li>हार्डवेयर टेक्नीशियन</li>
+<li>नेटवर्क सपोर्ट</li>
+</ul>
+`,
+
+sewing: `
+<h2>सिलाई तकनीक (Sewing Technology)</h2>
+<p><b>अवधि:</b> 1 वर्ष</p>
+
+<h3>कोर्स परिचय:</h3>
+<p>इस ट्रेड में कपड़े सिलना, डिजाइनिंग और फैशन से संबंधित कार्य सिखाए जाते हैं।</p>
+
+<h3>सीखने वाले कौशल:</h3>
+<ul>
+<li>गारमेंट डिजाइन</li>
+<li>कटिंग और सिलाई</li>
+</ul>
+
+<h3>नौकरी:</h3>
+<ul>
+<li>टेलर</li>
+<li>फैशन डिजाइनर</li>
+</ul>
+`,
+
+diesel: `
+<h2>डीजल मैकेनिक (Mechanical Diesel)</h2>
+<p><b>अवधि:</b> 1 वर्ष</p>
+
+<h3>कोर्स परिचय:</h3>
+<p>इस ट्रेड में डीजल इंजन की मरम्मत और सर्विसिंग सिखाई जाती है।</p>
+
+<h3>सीखने वाले कौशल:</h3>
+<ul>
+<li>इंजन रिपेयर</li>
+<li>वाहन सर्विसिंग</li>
+</ul>
+
+<h3>नौकरी:</h3>
+<ul>
+<li>मैकेनिक</li>
+<li>सर्विस सेंटर जॉब</li>
+</ul>
+`,
+
+welder: `
+<h2>वेल्डर (Welder)</h2>
+<p><b>अवधि:</b> 1 वर्ष</p>
+
+<h3>कोर्स परिचय:</h3>
+<p>इस ट्रेड में धातु को जोड़ने के लिए वेल्डिंग तकनीक सिखाई जाती है।</p>
+
+<h3>सीखने वाले कौशल:</h3>
+<ul>
+<li>आर्क वेल्डिंग</li>
+<li>गैस वेल्डिंग</li>
+</ul>
+
+<h3>नौकरी:</h3>
+<ul>
+<li>वेल्डर</li>
+<li>इंडस्ट्रियल वर्क</li>
+</ul>
+`
+
+};
+
+document.getElementById("courseInfo").innerHTML = data[course];
+
+}
+</script>
